@@ -1,0 +1,65 @@
+nav {
+    padding: 14px 32px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding-left: 261px;
+  
+    > span {
+      font-weight: 600;
+    }
+  
+    .accountInfo {
+      display: flex;
+      gap: 5px;
+  
+      .profileName {
+        display: flex;
+        flex-direction: column;
+  
+        span:first-child {
+          font-size: 14px;
+          color: #404040;
+          font-weight: 700;
+          text-transform: capitalize;
+        }
+  
+        span {
+          font-weight: 600;
+          font-size: 12px;
+          color: #565656;
+        }
+      }
+    }
+  
+    .listBtn {
+      display: none;
+      background-color: transparent;
+      border: none;
+      margin-left: 10px;
+    }
+  }
+  @media (max-width: 639px) {
+    nav {
+      padding: 20px;
+  
+      .listBtn {
+        display: block;
+      }
+    }
+  }
+  
+  @media (min-width: 640px) and (max-width: 1023px) {
+    nav {
+      padding: 20px;
+  
+      .listBtn {
+        display: block;
+      }
+    }
+  }
+  

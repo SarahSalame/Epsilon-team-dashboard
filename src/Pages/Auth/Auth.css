@@ -1,0 +1,137 @@
+.register {
+    background-image: url(../../assets/imgs/wave-haikei.svg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    width: 100%;
+    text-align: center;
+  
+    form {
+      padding: 26px;
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      background-color: white;
+      width: 520px;
+      height: 620px;
+      border-radius: 16px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  
+      > div:first-child {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+  
+        > div {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          gap: 15px;
+  
+          label {
+            width: 45%;
+            font-size: 16px;
+            font-weight: 600;
+            color: #202224;
+          }
+  
+          label[for="email"] {
+            width: 100%;
+          }
+  
+          label[for="image"] {
+            cursor: pointer;
+            height: 100px;
+  
+            div:first-child {
+              width: 100px;
+              height: 100%;
+              background-color: rgba(248, 248, 255, 1);
+              border: 1px dashed rgba(72, 128, 255, 0.3);
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              border-radius: 4px;
+            }
+  
+            input {
+              display: none;
+            }
+          }
+        }
+  
+        h1 {
+          font-size: 32px;
+          color: #202224;
+          font-weight: 700;
+          margin-bottom: 10px;
+        }
+  
+        p {
+          font-weight: 600;
+          font-size: 14px;
+          color: #666;
+        }
+  
+        label {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+        }
+      }
+      div:last-child {
+        button {
+          width: 100%;
+          background-color: #4880ff;
+          border-radius: 8px;
+          color: white;
+          border: none;
+          padding: 15px 0;
+          margin-bottom: 10px;
+          transition: 200ms;
+          cursor: pointer;
+        }
+  
+        button:hover {
+          background-color: #3b6de1;
+        }
+  
+        p {
+          color: #202224;
+          font-weight: 600;
+          font-size: 14px;
+        }
+  
+        a {
+          color: #5a8cff;
+          font-weight: 700;
+          margin-left: 4px;
+          text-decoration: none;
+        }
+      }
+      img {
+        width: 50%;
+      }
+    }
+  
+    .errorMsg {
+      color: red;
+      font-weight: 500;
+      font-size: 14px;
+    }
+  }
+  
+  @media (max-width: 639px) {
+    .register {
+      padding: 20px;
+      height: 100vh;
+  
+      form {
+        padding: 15px;
+      }
+    }
+  }
+  

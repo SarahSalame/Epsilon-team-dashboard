@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Nunito Sans";
+  }
+  
+  body {
+    background-color: #f5f6fa;
+  }
+  
+  button {
+    cursor: pointer;
+  }
+  
+  .input {
+    width: 100%;
+    background-color: #f1f4f9;
+    border: 1px solid #d8d8d8;
+    border-radius: 6px;
+    padding: 10px;
+    font-size: 16px;
+  }
+  
+  .app {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+  
+  .appContent {
+    margin-top: 70px;
+    flex-grow: 1;
+    margin-left: 229px;
+  }
+  
+  @media (max-width: 639px) {
+    .appContent {
+      width: 100%;
+      margin-left: 0;
+    }
+  }
+  
+  @media (min-width: 640px) and (max-width: 1023px) {
+    .appContent {
+      margin-left: 0;
+    }
+  }
+  
